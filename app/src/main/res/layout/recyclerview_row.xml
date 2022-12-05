@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/rowLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="2dp"
+    android:background="@drawable/row_background">
+    
+    <ImageView
+        android:id="@+id/newImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="5dp"/>
+    <TextView
+        android:id="@+id/newTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:hint="WARNING!"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginHorizontal="5dp"/>
+    <TextView
+        android:id="@+id/newSummary"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:textSize="15dp"
+        android:hint="hello this a new. Today it's gonna be rainy and windy. Be careful about your clothes choose"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="5dp"/>
+    <TextView
+        android:id="@+id/newAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="sozcu"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>
+</layout>
