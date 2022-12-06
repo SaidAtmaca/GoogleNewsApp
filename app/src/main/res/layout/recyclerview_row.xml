@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="news"
+            type="com.example.googlenewsapp.model.NewsModel" />
+    </data>
 <LinearLayout
     android:id="@+id/rowLinearLayout"
     android:layout_width="match_parent"
@@ -14,14 +20,15 @@
         android:id="@+id/newImage"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginHorizontal="5dp"/>
+        android:layout_marginHorizontal="5dp"
+        android:downloadUrl="@{news.urlToImage}"/>
     <TextView
         android:id="@+id/newTitle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:hint="WARNING!"
+        android:text="@{news.title}"
         android:textColor="@color/black"
         android:gravity="center"
         android:layout_marginHorizontal="5dp"/>
@@ -30,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:textSize="15dp"
-        android:hint="hello this a new. Today it's gonna be rainy and windy. Be careful about your clothes choose"
+        android:text="@{news.description}"
         android:paddingTop="5dp"
         android:textColor="@color/black"
         android:layout_marginHorizontal="5dp"/>
@@ -39,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:hint="sozcu"
+        android:text="@{news.author}"
         android:layout_marginLeft="250dp"
         android:layout_marginBottom="5dp"/>
 </LinearLayout>
