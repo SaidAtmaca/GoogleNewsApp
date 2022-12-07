@@ -6,6 +6,9 @@
         <variable
             name="news"
             type="com.example.googlenewsapp.model.NewsModel" />
+        <variable
+            name="listener"
+            type="com.example.googlenewsapp.adapter.NewsClickListener" />
     </data>
 <LinearLayout
     android:id="@+id/rowLinearLayout"
@@ -14,7 +17,9 @@
     android:orientation="vertical"
     android:layout_marginHorizontal="4dp"
     android:layout_marginVertical="2dp"
+    android:onClick="@{listener::onNewsClicked}"
     android:background="@drawable/row_background">
+
     
     <ImageView
         android:id="@+id/newImage"
@@ -23,29 +28,38 @@
         android:layout_marginHorizontal="5dp"
         android:downloadUrl="@{news.urlToImage}"/>
     <TextView
+        android:id="@+id/newUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@{String.valueOf(news.url)}"/>
+    <TextView
         android:id="@+id/newTitle"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:textStyle="bold"
         android:textSize="25dp"
         android:text="@{news.title}"
         android:textColor="@color/black"
         android:gravity="center"
-        android:layout_marginHorizontal="5dp"/>
+        android:layout_marginHorizontal="8dp"/>
     <TextView
         android:id="@+id/newSummary"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:textSize="15dp"
         android:text="@{news.description}"
         android:paddingTop="5dp"
         android:textColor="@color/black"
-        android:layout_marginHorizontal="5dp"/>
+        android:layout_marginHorizontal="8dp"/>
     <TextView
         android:id="@+id/newAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
+        android:textColor="@color/black"
         android:text="@{news.author}"
         android:layout_marginLeft="250dp"
         android:layout_marginBottom="5dp"/>
