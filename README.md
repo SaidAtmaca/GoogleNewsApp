@@ -9,14 +9,14 @@ You can download app and install from **[here.](https://github.com/SaidAtmaca/Go
 <table><tr>
 <td> 
   <p align="center" style="padding: 10px">
-    <img alt="Forwarding" src="https://user-images.githubusercontent.com/54797582/206531095-347415ff-b647-409e-bf93-d8176f9740e4.png" width="400">
+    <img alt="Forwarding" src="https://user-images.githubusercontent.com/54797582/206543782-0753d9ce-0df5-42d1-b76f-ad322e76bb84.png" width="400">
     <br>
     <em style="color: grey">Feed</em>
   </p> 
 </td>
 <td> 
   <p align="center">
-    <img alt="Routing" src="https://user-images.githubusercontent.com/54797582/206532535-16c1907c-4c2a-49b4-b3c2-3bdb306544fe.gif" width="400">
+    <img alt="Routing" src="https://user-images.githubusercontent.com/54797582/206543887-b0187fcc-807c-480f-a699-db36b3ee604e.gif" width="400">
     <br>
     <em style="color: grey">Flow</em>
   </p> 
