@@ -26,12 +26,12 @@ You can download app and install from **[here.](https://github.com/SaidAtmaca/Go
 
 ## Tech Stack
 
-* [Kotlin](https://kotlinlang.org/)
+* [Kotlin](https://kotlinlang.org/) - Kotlin programming language.
 * [MVVM Architecture](https://developer.android.com/jetpack/guide) - Modern, maintainable, and Google suggested app architecture
-* [Data Binding](https://developer.android.com/topic/libraries/data-binding) 
+* [Data Binding](https://developer.android.com/topic/libraries/data-binding) - The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app
 * [Live Data](https://developer.android.com/topic/libraries/architecture/livedata) - LiveData is an observable data holder class.
 * [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - A type-safe HTTP client for Android and the JVM.
-* [Gson](https://github.com/google/gson)
+* [Gson](https://github.com/google/gson) - Gson is a Java library that can be used to convert Java Objects into their JSON representation. 
 * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - ViewModel class is designed to store and manage UI-related data in a lifecycle conscious way.
 * [Swipe Refresh Layout](https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout)
 
